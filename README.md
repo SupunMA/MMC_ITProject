@@ -3,7 +3,12 @@
 <p align="center"><a href="https://laravel.com" target="_blank"><img src="https://www.sliit.lk/wp-content/uploads/2018/03/SLIIT.png" width="400"></a></p>
 <h1 align="center">Loan and Land Management System</h1>
 <h3 align="center">Group10 2020</h3>
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400"></a></p>
+
+<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://github.com/SupunMA/MMC_ITProject/blob/master/public/img/logo3.png" width="400"></a></p>
+<h5 align="center">Client Company is Madhushanka MicroCredit(pvt)Ltd</h5>
+
+
+<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="300"></a></p>
 
 <p align="center">
 <a href="https://travis-ci.org/laravel/framework"><img src="https://travis-ci.org/laravel/framework.svg" alt="Build Status"></a>
