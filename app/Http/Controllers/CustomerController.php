@@ -96,7 +96,15 @@ class CustomerController extends Controller
     }
 
     
+    public function deleteCusAccount($id){
 
+        // $bdata=userMsg::where($id);
+         //DB::delete('delete from customers where cid = ?',[$id]);
+         customer::where('cid', $id)->delete();
+         //$bdata->delete();
+         return Redirect::route('loginCus');
+         
+     }
 
 
 }

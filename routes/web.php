@@ -190,7 +190,7 @@ Route::get('/customer/myloans', [App\Http\Controllers\CustomerController::class,
 Route::post('/customerUpdate', [App\Http\Controllers\CustomerController::class,'editCusDetails'])->name('editCusDetails')->middleware('customer');
 Route::get('/customer/EditProfile', [App\Http\Controllers\CustomerController::class,'CusEditProfile'])->name('CusEditProfile')->middleware('customer');
 
-
+Route::get('/deleteCusAccount/{id}', [App\Http\Controllers\CustomerController::class,'deleteCusAccount'])->name('deleteCusAccount')->middleware('customer');
 
 
 //Manager

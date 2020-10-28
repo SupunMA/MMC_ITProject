@@ -98,7 +98,8 @@
                   <!-- Delete Account -->
                 <div class="callout callout-danger">
                   <h5><b>Delete Account!</b></h5>
-                  <form action="" method="get">
+                  <form action="/deleteCusAccount/{{($ddata['customer']->cid)}}" method="get">
+                  @csrf
                     <p class=""><font size="3"><i>Dear Customer,<br>You do not have make a loan from our company!. <br>Therefore,You can delete your account permanently </i></font></p>
                         <div class="col-md-5">
                          <input type="submit" class="btn btn-danger btn-block" value="Delete My Account">
