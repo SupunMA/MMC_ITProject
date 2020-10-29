@@ -96,6 +96,8 @@
 
 
                   <!-- Delete Account -->
+                  @if($ddata['customer']->TakenALoan)
+                  @else
                 <div class="callout callout-danger">
                   <h5><b>Delete Account!</b></h5>
                   <form action="/deleteCusAccount/{{($ddata['customer']->cid)}}" method="get">
@@ -108,7 +110,7 @@
                   </form>
                   
                 </div><!--/ Delete Account -->
-
+                  @endif
 
 
             </div>
