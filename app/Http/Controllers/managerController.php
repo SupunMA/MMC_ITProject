@@ -6,6 +6,7 @@ use Redirect;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
 use App\Models\user;
+use App\Models\customer;
 use App\Models\lands;
 use App\Models\loanDetails;
 class managerController extends Controller
@@ -163,6 +164,7 @@ class managerController extends Controller
             
         ]);
         $loan=new loanDetails;
+        
 
         $loan->cid=$loanData->nicList;
         $loan->LoanAmount=$loanData->loan;
@@ -170,6 +172,10 @@ class managerController extends Controller
         $loan->lateRate=$loanData->lateFeeRate;
         $loan->loanDate=$loanData->loanDate;
         $loan->save();
+
+        customer::where('cid', $loanData->nicList)->update(array('TakenALoan' =>1));
+        
+        
 
         //return view('manager.Loan.loanDetails'
         return Redirect::route('ManagerAddLoanDetails',compact(['ddata']));

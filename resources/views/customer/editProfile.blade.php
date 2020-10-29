@@ -106,13 +106,10 @@
                         <div class="col-md-5">
                          <input type="submit" class="btn btn-danger btn-block" value="Delete My Account">
                         </div>
-
                   </form>
-                  
                 </div><!--/ Delete Account -->
                   @endif
-
-
+                  
             </div>
               <!-- /.card-body -->
         </div>
